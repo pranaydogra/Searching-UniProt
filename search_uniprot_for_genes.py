@@ -77,6 +77,7 @@ def search_genes(gene_list, tissue, out_dir, receiver):
 # =============================================================================
 searchterms = []
 ans = input(r"Do you have a file with list of genes (y/n): ")
+print('\n')
 
 if ans == 'y':
     file_path = input(r"Enter path to file with list of genes: ")
