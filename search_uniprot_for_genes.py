@@ -59,7 +59,7 @@ def search_genes(gene_list, tissue, out_dir, receiver):
         
     f.close()
     
-    # this code send an email to the "customer" after the script is done running for all search terms
+    # this code below sends an email to the "customer" after the script is done running for all search terms
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
