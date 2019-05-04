@@ -15,7 +15,7 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 
 # =============================================================================
-# define function
+# define function to extract gene information and send email upon completion
 # =============================================================================
 def search_genes(gene_list, tissue, out_dir, receiver):
     f= open(out_dir + "{}_gene_info.docx".format(tissue),"w+")
@@ -59,7 +59,7 @@ def search_genes(gene_list, tissue, out_dir, receiver):
         
     f.close()
     
-    # this code send an email/sms to the user after the script is done running for all search terms
+    # this code send an email to the "customer" after the script is done running for all search terms
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
@@ -73,7 +73,7 @@ def search_genes(gene_list, tissue, out_dir, receiver):
     server.quit()
     
 # =============================================================================
-# run program here
+# call function
 # =============================================================================
 searchterms = []
 ans = input(r"Do you have a file with list of genes (y/n): ")
