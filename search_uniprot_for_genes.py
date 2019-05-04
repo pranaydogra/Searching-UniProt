@@ -92,4 +92,4 @@ if ans == 'n':
     cust_email = input(r"Enter receiver's email address: ")
     searchterms = list(map(str,input(r"Enter genes names separated by space: ").split()))
     site = input("Enter tissue site: ")
-    search_genes(searchterms, site, out_path)
+    search_genes(searchterms, site, out_path,cust_email)
