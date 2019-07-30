@@ -6,3 +6,6 @@ If you provide a .csv file, it should have a column named 'genes'. In this case 
 
 I hope this saves you some time as it has done for me.
 Feel free to edit and share!
+
+Disclaimer: Please use the code responsibly and do not inundate the server with multiple scraping requests which may lead to slowing or crashing of the server.
+
