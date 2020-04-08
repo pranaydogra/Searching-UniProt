@@ -1,7 +1,7 @@
 # Searching-UniProt
 
 ## The problem... at least for me it is.
-As a biologist I am always having to look up the function of genes one at a time by copy pasting the gene names into UniProt. This takes forver. I haev lost many a hair on my head doign this. :(
+As a biologist I am always having to look up the function of genes one at a time by copy pasting the gene names into UniProt. This takes forver. I have lost many a hair on my head doign this. :(
 
 ## The solution
 Here I created a python script which can be run in the terminal that automates the proces. You can provide either a .csv file with a list of interesting genes or enter a genes into the terminal separated by space. The output is a doc file that contains information about protein function (molecular, bological) and aliases.
